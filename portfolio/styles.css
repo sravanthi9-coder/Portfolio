@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+
+}
+.navbar a:hover{
+    color: #0ef;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/groot1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span{
+    color: #0ef;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+
+}
+.home-content p{
+    font-size: 20px;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #fff;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 70px;
+} 
+
+.header .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    transition: 0.3s;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/wallpaper_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 50vh; /* Ensure the section takes up full vertical space */  
+}
+.about-section p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about-section img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 100px 0;
+}
+/* Skills Section */
+.skills-section{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/wallpaper_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: cyan;
+}
+
+.skills-section ul li {
+    font-size: 18px;
+    padding: 10px 0;
+}
+.skills-section h2{
+    margin: 70px 0;
+}
+
+/* Portfolio Section */
+.portfolio-section{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/wallpaper_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.portfolio-section h2{
+    margin-top: 70px;
+}
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Contact Section */
+.contact-section{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./images/wallpaper_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+.contact-section img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 100px 0;
+}
+.contact-section .contact-form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
